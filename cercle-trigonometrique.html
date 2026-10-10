@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le cercle trigonométrique — Chapitre 7, cours 2</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800&family=Viga&display=swap">
+<style>
+body{background:#fff;margin:0;}
+.pq-card{background:#fff;border:1px solid #e0e0e8;border-radius:10px;padding:18px;margin-bottom:16px;}
+.pq-head{display:flex;align-items:center;margin-bottom:12px;}
+.pq-badge{width:28px;height:28px;border-radius:50%;background:#3b6cd1;color:#fff;font-family:'Viga',sans-serif;font-size:14px;display:flex;align-items:center;justify-content:center;margin-right:10px;flex-shrink:0;}
+.pq-label{font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#3b6cd1;}
+.pq-question{font-family:'Viga',sans-serif;font-size:1.1rem;color:#1a1a2e;line-height:1.4;margin-bottom:14px;}
+.pq-opt{display:block;width:100%;text-align:left;background:#fff;border:1px solid #d5d8e3;border-radius:8px;padding:10px 14px;margin-bottom:8px;font-family:'Noto Sans',sans-serif;font-size:15px;line-height:1.5;color:#333;cursor:pointer;transition:background 0.15s,border-color 0.15s;}
+.pq-opt:hover{border-color:#3b6cd1;background:#f6f9fe;}
+.pq-opt:focus-visible{outline:2px solid #3b6cd1;outline-offset:2px;}
+.pq-opt.pq-good{background:#f4faf0;border-color:#6aaa1e;color:#3d6b0c;font-weight:700;}
+.pq-opt.pq-bad{background:#fdf1f1;border-color:#a03030;color:#a03030;}
+.pq-fb{display:none;margin-top:6px;padding:12px;border-left:4px solid #6aaa1e;background:#f4faf0;font-family:'Noto Sans',sans-serif;font-size:14px;line-height:1.6;color:#333;}
+.pq-fb.pq-fb-bad{border-left-color:#a03030;background:#fdf1f1;}
+</style>
+</head>
+<body>
+
+<div class="container-fluid px-3 px-md-5 py-4" style="max-width:800px;margin:0 auto;font-family:'Noto Sans',sans-serif;">
+
+    <div class="d-flex align-items-center mb-2">
+        <div style="width:24px;height:2px;background:#3b6cd1;margin-right:10px;"></div>
+        <span style="font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3b6cd1;">Cours 2 — Chapitre 7</span>
+    </div>
+
+    <h1 style="font-family:'Viga',sans-serif;font-size:2.2rem;color:#1a1a2e;line-height:1.1;margin-bottom:12px;">Le cercle trigonométrique</h1>
+
+    <p style="font-family:'Noto Sans',sans-serif;font-size:1.05rem;line-height:1.6;color:#555;margin-bottom:28px;max-width:62ch;">
+        Sur un cercle de rayon 1, les coordonnées de tout point deviennent directement les valeurs du cosinus et du sinus. Ce cercle — appelé <strong>cercle trigonométrique</strong> — est l'outil central de toute la trigonométrie.
+    </p>
+
+    <!-- P(theta) = (cos, sin) -->
+    <h2 style="font-family:'Viga',sans-serif;font-size:1.4rem;color:#1a1a2e;margin-bottom:14px;">\(P(\theta) = (\cos\theta,\, \sin\theta)\)</h2>
+
+    <div class="row mb-4">
+        <div class="col-12 col-md-6 mb-3">
+            <div style="background:#fff;border:1px solid #e0e0e8;border-radius:10px;padding:16px;height:100%;">
+                <div style="font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#3b6cd1;letter-spacing:0.1em;margin-bottom:10px;">Pourquoi rayon = 1 ?</div>
+                <div style="font-family:'Noto Sans',sans-serif;font-size:14px;color:#333;line-height:1.8;">
+                    Rappelons que \(\sin\theta = \dfrac{\text{opposé}}{\text{hypoténuse}}\). Sur le cercle trigonométrique, l'hypoténuse est le rayon, qui vaut 1. Donc :
+                    <div style="margin-top:10px;text-align:center;">
+                        \(\sin\theta = \dfrac{\text{opposé}}{1} = y_{P(\theta)}\)<br><br>
+                        \(\cos\theta = \dfrac{\text{adjacent}}{1} = x_{P(\theta)}\)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div style="background:#eef4fc;border:1px solid #b3c8f5;border-radius:10px;padding:16px;height:100%;">
+                <div style="font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#3b6cd1;letter-spacing:0.1em;margin-bottom:10px;">Théorème de Pythagore</div>
+                <div style="font-family:'Noto Sans',sans-serif;font-size:14px;color:#333;line-height:1.8;">
+                    Puisque \(P(\theta) = (x, y)\) est sur un cercle de rayon 1, ses coordonnées vérifient toujours :
+                    <div style="margin-top:10px;text-align:center;font-size:18px;">
+                        \(x^2 + y^2 = 1\)
+                    </div>
+                    <div style="margin-top:8px;font-size:12px;color:#888;text-align:center;">c'est-à-dire \(\cos^2\theta + \sin^2\theta = 1\)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Les 3 angles fondamentaux -->
+    <h2 style="font-family:'Viga',sans-serif;font-size:1.4rem;color:#1a1a2e;margin-bottom:14px;">Les angles remarquables : 30°, 45° et 60°</h2>
+
+    <p style="font-family:'Noto Sans',sans-serif;font-size:1rem;line-height:1.7;color:#555;margin-bottom:14px;max-width:62ch;">
+        Les coordonnées exactes de ces trois angles se calculent par le théorème de Pythagore. Tout le reste du cercle s'obtient par <strong>symétrie</strong>.
+    </p>
+
+    <div class="row mb-4">
+        <!-- 30 deg -->
+        <div class="col-12 col-md-4 mb-3">
+            <div onclick="var i=this.querySelector('.c7c2-f30');i.style.transform=i.style.transform==='rotateY(180deg)'?'rotateY(0deg)':'rotateY(180deg)'" style="cursor:pointer;perspective:1000px;height:280px;">
+                <div class="c7c2-f30" style="position:relative;width:100%;height:100%;transition:transform 0.55s;transform-style:preserve-3d;">
+                    <div style="position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff;border:1px solid #e0e0e8;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
+                        <div style="font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#6aaa1e;">30° = π/6 rad</div>
+                        <div style="font-size:28px;">\(P\!\left(\dfrac{\pi}{6}\right) = ?\)</div>
+                        <div style="font-size:11px;color:#aaa;">Clique pour voir</div>
+                    </div>
+                    <div style="position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);background:#eef4fc;border:1px solid #b3c8f5;border-radius:10px;padding:16px;display:flex;flex-direction:column;justify-content:center;gap:8px;">
+                        <div style="font-size:12px;color:#333;line-height:1.8;">
+                            Côté opposé à 30° = ½ de l'hypoténuse :<br>\(y = \dfrac{1}{2}\)<br>
+                            Par Pythagore : \(x = \dfrac{\sqrt{3}}{2}\)
+                        </div>
+                        <div style="font-size:13px;color:#1a1a2e;text-align:center;background:#fff;border-radius:6px;padding:8px;">
+                            \(P\!\left(30°\right) = \left(\dfrac{\sqrt{3}}{2},\dfrac{1}{2}\right)\)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 45 deg -->
+        <div class="col-12 col-md-4 mb-3">
+            <div onclick="var i=this.querySelector('.c7c2-f45');i.style.transform=i.style.transform==='rotateY(180deg)'?'rotateY(0deg)':'rotateY(180deg)'" style="cursor:pointer;perspective:1000px;height:280px;">
+                <div class="c7c2-f45" style="position:relative;width:100%;height:100%;transition:transform 0.55s;transform-style:preserve-3d;">
+                    <div style="position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff;border:1px solid #e0e0e8;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
+                        <div style="font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#6aaa1e;">45° = π/4 rad</div>
+                        <div style="font-size:28px;">\(P\!\left(\dfrac{\pi}{4}\right) = ?\)</div>
+                        <div style="font-size:11px;color:#aaa;">Clique pour voir</div>
+                    </div>
+                    <div style="position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);background:#eef4fc;border:1px solid #b3c8f5;border-radius:10px;padding:16px;display:flex;flex-direction:column;justify-content:center;gap:8px;">
+                        <div style="font-size:12px;color:#333;line-height:1.8;">
+                            Triangle isocèle → \(x = y\) :<br>
+                            \(2x^2 = 1 \Rightarrow x = \dfrac{\sqrt{2}}{2}\)
+                        </div>
+                        <div style="font-size:13px;color:#1a1a2e;text-align:center;background:#fff;border-radius:6px;padding:8px;">
+                            \(P\!\left(45°\right) = \left(\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}\right)\)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 60 deg -->
+        <div class="col-12 col-md-4 mb-3">
+            <div onclick="var i=this.querySelector('.c7c2-f60');i.style.transform=i.style.transform==='rotateY(180deg)'?'rotateY(0deg)':'rotateY(180deg)'" style="cursor:pointer;perspective:1000px;height:280px;">
+                <div class="c7c2-f60" style="position:relative;width:100%;height:100%;transition:transform 0.55s;transform-style:preserve-3d;">
+                    <div style="position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff;border:1px solid #e0e0e8;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;">
+                        <div style="font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#6aaa1e;">60° = π/3 rad</div>
+                        <div style="font-size:28px;">\(P\!\left(\dfrac{\pi}{3}\right) = ?\)</div>
+                        <div style="font-size:11px;color:#aaa;">Clique pour voir</div>
+                    </div>
+                    <div style="position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);background:#eef4fc;border:1px solid #b3c8f5;border-radius:10px;padding:16px;display:flex;flex-direction:column;justify-content:center;gap:8px;">
+                        <div style="font-size:12px;color:#333;line-height:1.8;">
+                            60° et 30° sont complémentaires → coordonnées inversées par rapport à P(30°).
+                        </div>
+                        <div style="font-size:13px;color:#1a1a2e;text-align:center;background:#fff;border-radius:6px;padding:8px;">
+                            \(P\!\left(60°\right) = \left(\dfrac{1}{2},\dfrac{\sqrt{3}}{2}\right)\)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animation -->
+    <h2 style="font-family:'Viga',sans-serif;font-size:1.4rem;color:#1a1a2e;margin-bottom:12px;">Exploration interactive — Les 16 angles remarquables</h2>
+    <p style="font-family:'Noto Sans',sans-serif;font-size:1.05rem;line-height:1.6;color:#555;margin-bottom:16px;max-width:62ch;">
+        Clique sur n'importe quel point du cercle pour afficher ses coordonnées exactes, son angle de référence dans le quadrant I, et identifier la symétrie correspondante.
+    </p>
+    <div style="margin-bottom:28px;">
+        <iframe src="data:text/html;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImZyIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL21hdGhqYXgvMy4yLjIvZXM1L3RleC1jaHRtbC5taW4uanMiPjwvc2NyaXB0Pgo8c3R5bGU+Cip7Ym94LXNpemluZzpib3JkZXItYm94O21hcmdpbjowO3BhZGRpbmc6MDt9CmJvZHl7Zm9udC1mYW1pbHk6IlNlZ29lIFVJIixzYW5zLXNlcmlmO2JhY2tncm91bmQ6dHJhbnNwYXJlbnQ7Zm9udC1zaXplOjEzcHg7fQouc2hlbGx7Ym9yZGVyLXJhZGl1czoxMnB4O292ZXJmbG93OmhpZGRlbjtib3JkZXI6MXB4IHNvbGlkICNkZGQ7YmFja2dyb3VuZDojZjVmM2VlO30KLmhlYWRlcntkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuO3BhZGRpbmc6MTBweCAxNHB4O2JhY2tncm91bmQ6I2Y1ZjNlZTtib3JkZXItYm90dG9tOjFweCBzb2xpZCAjZGRkO30KLmhse2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7Z2FwOjhweDt9Ci5kb3R7d2lkdGg6MTBweDtoZWlnaHQ6MTBweDtib3JkZXItcmFkaXVzOjUwJTtiYWNrZ3JvdW5kOiMzYjZjZDE7ZmxleC1zaHJpbms6MDt9Ci5odGl0bGV7Zm9udC1zaXplOjExcHg7Zm9udC13ZWlnaHQ6NzAwO2xldHRlci1zcGFjaW5nOjAuMWVtO3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZTtjb2xvcjojNDQ0O30KLmJvZHktd3JhcHtkaXNwbGF5OmZsZXg7fQouZ3JhcGgtY29se2ZsZXg6MSAxIDA7bWluLXdpZHRoOjA7cGFkZGluZzo4cHg7fQouY3RybC1jb2x7d2lkdGg6MjIwcHg7ZmxleC1zaHJpbms6MDtiYWNrZ3JvdW5kOiNmNWYzZWU7Ym9yZGVyLWxlZnQ6MXB4IHNvbGlkICNkZGQ7cGFkZGluZzoxNHB4O2Rpc3BsYXk6ZmxleDtmbGV4LWRpcmVjdGlvbjpjb2x1bW47Z2FwOjhweDt9CmNhbnZhc3tkaXNwbGF5OmJsb2NrO3dpZHRoOjEwMCU7YmFja2dyb3VuZDojZmZmO2JvcmRlci1yYWRpdXM6NnB4O2JvcmRlcjoxcHggc29saWQgI2UwZTBlMDtjdXJzb3I6cG9pbnRlcjt9Ci5oaW50e2ZvbnQtc2l6ZToxMXB4O2NvbG9yOiM4ODg7dGV4dC1hbGlnbjpjZW50ZXI7bWFyZ2luLXRvcDo0cHg7fQouaW5mby1ib3h7YmFja2dyb3VuZDojZmZmO2JvcmRlcjoxcHggc29saWQgI2UwZTBlODtib3JkZXItcmFkaXVzOjhweDtwYWRkaW5nOjEycHg7ZmxleDoxO30KLmluZm8tdGl0bGV7Zm9udC1zaXplOjExcHg7Zm9udC13ZWlnaHQ6NzAwO3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZTtsZXR0ZXItc3BhY2luZzowLjA4ZW07Y29sb3I6IzNiNmNkMTttYXJnaW4tYm90dG9tOjhweDt9Ci5pbmZvLXJvd3tkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2dhcDo2cHg7cGFkZGluZzo1cHggMDtib3JkZXItYm90dG9tOjFweCBzb2xpZCAjZjBmMGYwO2ZvbnQtc2l6ZToxMnB4O30KLmluZm8tcm93Omxhc3QtY2hpbGR7Ym9yZGVyLWJvdHRvbTpub25lO30KLmluZm8tbGJse2NvbG9yOiM4ODg7bWluLXdpZHRoOjU2cHg7ZmxleC1zaHJpbms6MDtmb250LXNpemU6MTFweDt9Ci5pbmZvLXZhbHtjb2xvcjojMWExYTJlO2ZvbnQtd2VpZ2h0OjcwMDt9Ci5zeW0tYm94e2JhY2tncm91bmQ6I2VlZjRmYztib3JkZXI6MXB4IHNvbGlkICNiM2M4ZjU7Ym9yZGVyLXJhZGl1czo4cHg7cGFkZGluZzoxMHB4IDEycHg7Zm9udC1zaXplOjEycHg7fQouc3ltLXRpdGxle2ZvbnQtc2l6ZToxMXB4O2ZvbnQtd2VpZ2h0OjcwMDt0ZXh0LXRyYW5zZm9ybTp1cHBlcmNhc2U7Y29sb3I6IzNiNmNkMTttYXJnaW4tYm90dG9tOjZweDt9Ci5idG4tcnt3aWR0aDoxMDAlO3BhZGRpbmc6NnB4O2ZvbnQtc2l6ZToxMXB4O2JvcmRlci1yYWRpdXM6NnB4O2JvcmRlcjoxcHggc29saWQgIzNiNmNkMTtiYWNrZ3JvdW5kOiNmZmY7Y29sb3I6IzNiNmNkMTtjdXJzb3I6cG9pbnRlcjttYXJnaW4tdG9wOjRweDt9Ci5idG4tcjpob3ZlcntiYWNrZ3JvdW5kOiMzYjZjZDE7Y29sb3I6I2ZmZjt9Ci5lbXB0eS1tc2d7Y29sb3I6I2FhYTtmb250LXNpemU6MTJweDt0ZXh0LWFsaWduOmNlbnRlcjtwYWRkaW5nOjIwcHggMDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CjxkaXYgY2xhc3M9InNoZWxsIj4KICA8ZGl2IGNsYXNzPSJoZWFkZXIiPgogICAgPGRpdiBjbGFzcz0iaGwiPjxkaXYgY2xhc3M9ImRvdCI+PC9kaXY+PHNwYW4gY2xhc3M9Imh0aXRsZSI+Q2VyY2xlIHRyaWdvbm9tZXRyaXF1ZSDigJQgQW5nbGVzIHJlbWFycXVhYmxlczwvc3Bhbj48L2Rpdj4KICA8L2Rpdj4KICA8ZGl2IGNsYXNzPSJib2R5LXdyYXAiPgogICAgPGRpdiBjbGFzcz0iZ3JhcGgtY29sIj4KICAgICAgPGNhbnZhcyBpZD0iY3YiPjwvY2FudmFzPgogICAgICA8ZGl2IGNsYXNzPSJoaW50Ij5DbGlxdWUgc3VyIHVuIHBvaW50IHBvdXIgdm9pciBzZXMgY29vcmRvbm5lZXMgZXhhY3RlczwvZGl2PgogICAgPC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJjdHJsLWNvbCI+CiAgICAgIDxkaXYgY2xhc3M9ImluZm8tYm94IiBpZD0iaW5mb0JveCI+CiAgICAgICAgPGRpdiBjbGFzcz0iaW5mby10aXRsZSI+UG9pbnQgc2VsZWN0aW9ubmU8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJlbXB0eS1tc2ciPkNsaXF1ZSBzdXIgdW4gcG9pbnQgZHUgY2VyY2xlPC9kaXY+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzeW0tYm94IiBpZD0ic3ltQm94IiBzdHlsZT0iZGlzcGxheTpub25lOyI+CiAgICAgICAgPGRpdiBjbGFzcz0ic3ltLXRpdGxlIj5TeW1ldHJpZTwvZGl2PgogICAgICAgIDxkaXYgaWQ9InN5bUNvbnRlbnQiPjwvZGl2PgogICAgICA8L2Rpdj4KICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuLXIiIG9uY2xpY2s9ImNsZWFyU2VsKCkiPkVmZmFjZXIgbGEgc2VsZWN0aW9uPC9idXR0b24+CiAgICA8L2Rpdj4KICA8L2Rpdj4KPC9kaXY+CjxzY3JpcHQ+CnZhciBjdiA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdjdicpOwp2YXIgY3R4ID0gY3YuZ2V0Q29udGV4dCgnMmQnKTsKdmFyIGRwciA9IHdpbmRvdy5kZXZpY2VQaXhlbFJhdGlvIHx8IDE7CnZhciBXID0gNDIwLCBIID0gNDIwOwpjdi53aWR0aCA9IFcgKiBkcHI7IGN2LmhlaWdodCA9IEggKiBkcHI7CmN2LnN0eWxlLndpZHRoID0gVyArICdweCc7IGN2LnN0eWxlLmhlaWdodCA9IEggKyAncHgnOwpjdHguc2NhbGUoZHByLCBkcHIpOwp2YXIgQ1ggPSBXIC8gMiwgQ1kgPSBIIC8gMiwgUiA9IDE2MDsKCi8vIDE2IHBvaW50cyByZW1hcnF1YWJsZXMKdmFyIHB0cyA9IFsKICB7ZDowLCAgIHI6JzAnLCAgICAgICAgICAgICAgdGV4X3I6JzAnLCAgICAgICAgICAgICAgICAgICBjeDonMScsICAgICBzeDonMCcsICAgICBjb3NfdGV4OicxJywgICAgICAgICAgICAgc2luX3RleDonMCd9LAogIHtkOjMwLCAgcjonXHUwM2MwLzYnLCAgICAgICB0ZXhfcjonXFxmcmFje1xccGl9ezZ9JywgICAgIGN4OidcdTIyMWEzLzInLCBzeDonMS8yJywgICBjb3NfdGV4OidcXGZyYWN7XFxzcXJ0ezN9fXsyfScsIHNpbl90ZXg6J1xcZnJhY3sxfXsyfSd9LAogIHtkOjQ1LCAgcjonXHUwM2MwLzQnLCAgICAgICB0ZXhfcjonXFxmcmFje1xccGl9ezR9JywgICAgIGN4OidcdTIyMWEyLzInLCBzeDonXHUyMjFhMi8yJywgY29zX3RleDonXFxmcmFje1xcc3FydHsyfX17Mn0nLCBzaW5fdGV4OidcXGZyYWN7XFxzcXJ0ezJ9fXsyfSd9LAogIHtkOjYwLCAgcjonXHUwM2MwLzMnLCAgICAgICB0ZXhfcjonXFxmcmFje1xccGl9ezN9JywgICAgIGN4OicxLzInLCAgIHN4OidcdTIyMWEzLzInLCBjb3NfdGV4OidcXGZyYWN7MX17Mn0nLCAgICAgICAgICBzaW5fdGV4OidcXGZyYWN7XFxzcXJ0ezN9fXsyfSd9LAogIHtkOjkwLCAgcjonXHUwM2MwLzInLCAgICAgICB0ZXhfcjonXFxmcmFje1xccGl9ezJ9JywgICAgIGN4OicwJywgICAgIHN4OicxJywgICAgIGNvc190ZXg6JzAnLCAgICAgICAgICAgICBzaW5fdGV4OicxJ30sCiAge2Q6MTIwLCByOicyXHUwM2MwLzMnLCAgICAgIHRleF9yOidcXGZyYWN7MlxccGl9ezN9JywgICAgY3g6Jy0xLzInLCAgc3g6J1x1MjIxYTMvMicsIGNvc190ZXg6Jy1cXGZyYWN7MX17Mn0nLCAgICAgICAgIHNpbl90ZXg6J1xcZnJhY3tcXHNxcnR7M319ezJ9J30sCiAge2Q6MTM1LCByOiczXHUwM2MwLzQnLCAgICAgIHRleF9yOidcXGZyYWN7M1xccGl9ezR9JywgICAgY3g6Jy1cdTIyMWEyLzInLHN4OidcdTIyMWEyLzInLGNvc190ZXg6Jy1cXGZyYWN7XFxzcXJ0ezJ9fXsyfScsc2luX3RleDonXFxmcmFje1xcc3FydHsyfX17Mn0nfSwKICB7ZDoxNTAsIHI6JzVcdTAzYzAvNicsICAgICAgdGV4X3I6J1xcZnJhY3s1XFxwaX17Nn0nLCAgICBjeDonLVx1MjIxYTMvMicsc3g6JzEvMicsIGNvc190ZXg6Jy1cXGZyYWN7XFxzcXJ0ezN9fXsyfScsICBzaW5fdGV4OidcXGZyYWN7MX17Mn0nfSwKICB7ZDoxODAsIHI6J1x1MDNjMCcsICAgICAgICAgdGV4X3I6J1xccGknLCAgICAgICAgICAgICAgICBjeDonLTEnLCAgICBzeDonMCcsICAgICBjb3NfdGV4OictMScsICAgICAgICAgICAgc2luX3RleDonMCd9LAogIHtkOjIxMCwgcjonN1x1MDNjMC82JywgICAgICB0ZXhfcjonXFxmcmFjezdcXHBpfXs2fScsICAgIGN4OictXHUyMjFhMy8yJyxzeDonLTEvMicsY29zX3RleDonLVxcZnJhY3tcXHNxcnR7M319ezJ9Jywgc2luX3RleDonLVxcZnJhY3sxfXsyfSd9LAogIHtkOjIyNSwgcjonNVx1MDNjMC80JywgICAgICB0ZXhfcjonXFxmcmFjezVcXHBpfXs0fScsICAgIGN4OictXHUyMjFhMi8yJyxzeDonLVx1MjIxYTIvMicsY29zX3RleDonLVxcZnJhY3tcXHNxcnR7Mn19ezJ9JyxzaW5fdGV4OictXFxmcmFje1xcc3FydHsyfX17Mn0nfSwKICB7ZDoyNDAsIHI6JzRcdTAzYzAvMycsICAgICAgdGV4X3I6J1xcZnJhY3s0XFxwaX17M30nLCAgICBjeDonLTEvMicsICBzeDonLVx1MjIxYTMvMicsY29zX3RleDonLVxcZnJhY3sxfXsyfScsICAgICAgICBzaW5fdGV4OictXFxmcmFje1xcc3FydHszfX17Mn0nfSwKICB7ZDoyNzAsIHI6JzNcdTAzYzAvMicsICAgICAgdGV4X3I6J1xcZnJhY3szXFxwaX17Mn0nLCAgICBjeDonMCcsICAgICBzeDonLTEnLCAgICBjb3NfdGV4OicwJywgICAgICAgICAgICAgc2luX3RleDonLTEnfSwKICB7ZDozMDAsIHI6JzVcdTAzYzAvMycsICAgICAgdGV4X3I6J1xcZnJhY3s1XFxwaX17M30nLCAgICBjeDonMS8yJywgICBzeDonLVx1MjIxYTMvMicsY29zX3RleDonXFxmcmFjezF9ezJ9JywgICAgICAgICBzaW5fdGV4OictXFxmcmFje1xcc3FydHszfX17Mn0nfSwKICB7ZDozMTUsIHI6JzdcdTAzYzAvNCcsICAgICAgdGV4X3I6J1xcZnJhY3s3XFxwaX17NH0nLCAgICBjeDonXHUyMjFhMi8yJywgc3g6Jy1cdTIyMWEyLzInLGNvc190ZXg6J1xcZnJhY3tcXHNxcnR7Mn19ezJ9Jywgc2luX3RleDonLVxcZnJhY3tcXHNxcnR7Mn19ezJ9J30sCiAge2Q6MzMwLCByOicxMVx1MDNjMC82JywgICAgIHRleF9yOidcXGZyYWN7MTFcXHBpfXs2fScsICAgY3g6J1x1MjIxYTMvMicsIHN4OictMS8yJywgIGNvc190ZXg6J1xcZnJhY3tcXHNxcnR7M319ezJ9Jywgc2luX3RleDonLVxcZnJhY3sxfXsyfSd9Cl07CgovLyBBbmdsZSBkZSByZWZlcmVuY2UgZGFucyBsZSBRMSBwb3VyIGNoYXF1ZSBwb2ludApmdW5jdGlvbiBnZXRSZWZBbmdsZShkKSB7CiAgdmFyIG4gPSAoKGQgJSAzNjApICsgMzYwKSAlIDM2MDsKICBpZiAobiA8PSA5MCkgcmV0dXJuIG47CiAgaWYgKG4gPD0gMTgwKSByZXR1cm4gMTgwIC0gbjsKICBpZiAobiA8PSAyNzApIHJldHVybiBuIC0gMTgwOwogIHJldHVybiAzNjAgLSBuOwp9CgpmdW5jdGlvbiB0eXBlc2V0KGVsKSB7CiAgaWYgKHdpbmRvdy5NYXRoSmF4ICYmIE1hdGhKYXgudHlwZXNldFByb21pc2UpIE1hdGhKYXgudHlwZXNldFByb21pc2UoW2VsXSkuY2F0Y2goZnVuY3Rpb24oKXt9KTsKfQpmdW5jdGlvbiBtaih0KSB7IHJldHVybiAnXFwoJyArIHQgKyAnXFwpJzsgfQoKdmFyIHNlbCA9IC0xOwoKZnVuY3Rpb24gY2xlYXJTZWwoKSB7CiAgc2VsID0gLTE7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2luZm9Cb3gnKS5pbm5lckhUTUwgPSAnPGRpdiBjbGFzcz0iaW5mby10aXRsZSI+UG9pbnQgc2VsZWN0aW9ubmU8L2Rpdj48ZGl2IGNsYXNzPSJlbXB0eS1tc2ciPkNsaXF1ZSBzdXIgdW4gcG9pbnQgZHUgY2VyY2xlPC9kaXY+JzsKICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnc3ltQm94Jykuc3R5bGUuZGlzcGxheSA9ICdub25lJzsKICBkcmF3KCk7Cn0KCmZ1bmN0aW9uIHNob3dJbmZvKGkpIHsKICBzZWwgPSBpOwogIHZhciBwID0gcHRzW2ldOwogIHZhciBpYiA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdpbmZvQm94Jyk7CiAgaWIuaW5uZXJIVE1MID0gJzxkaXYgY2xhc3M9ImluZm8tdGl0bGUiPlAoJyArIHAuZCArICdcdTAwYjApPC9kaXY+JyArCiAgICAnPGRpdiBjbGFzcz0iaW5mby1yb3ciPjxzcGFuIGNsYXNzPSJpbmZvLWxibCI+QW5nbGU8L3NwYW4+PHNwYW4gY2xhc3M9ImluZm8tdmFsIiBpZD0iaXYtYW5nIj48L3NwYW4+PC9kaXY+JyArCiAgICAnPGRpdiBjbGFzcz0iaW5mby1yb3ciPjxzcGFuIGNsYXNzPSJpbmZvLWxibCI+UmFkaWFuczwvc3Bhbj48c3BhbiBjbGFzcz0iaW5mby12YWwiIGlkPSJpdi1yYWQiPjwvc3Bhbj48L2Rpdj4nICsKICAgICc8ZGl2IGNsYXNzPSJpbmZvLXJvdyI+PHNwYW4gY2xhc3M9ImluZm8tbGJsIj5jb3MgXHUwM2I4PC9zcGFuPjxzcGFuIGNsYXNzPSJpbmZvLXZhbCIgaWQ9Iml2LWNvcyI+PC9zcGFuPjwvZGl2PicgKwogICAgJzxkaXYgY2xhc3M9ImluZm8tcm93Ij48c3BhbiBjbGFzcz0iaW5mby1sYmwiPnNpbiBcdTAzYjg8L3NwYW4+PHNwYW4gY2xhc3M9ImluZm8tdmFsIiBpZD0iaXYtc2luIj48L3NwYW4+PC9kaXY+JyArCiAgICAnPGRpdiBjbGFzcz0iaW5mby1yb3ciPjxzcGFuIGNsYXNzPSJpbmZvLWxibCI+UChcdTAzYjgpPC9zcGFuPjxzcGFuIGNsYXNzPSJpbmZvLXZhbCIgaWQ9Iml2LXB0Ij48L3NwYW4+PC9kaXY+JzsKCiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2l2LWFuZycpLnRleHRDb250ZW50ID0gcC5kICsgJ1x1MDBiMCc7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2l2LXJhZCcpLmlubmVySFRNTCA9IG1qKHAudGV4X3IpOyB0eXBlc2V0KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdpdi1yYWQnKSk7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2l2LWNvcycpLmlubmVySFRNTCA9IG1qKHAuY29zX3RleCk7IHR5cGVzZXQoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2l2LWNvcycpKTsKICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnaXYtc2luJykuaW5uZXJIVE1MID0gbWoocC5zaW5fdGV4KTsgdHlwZXNldChkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnaXYtc2luJykpOwogIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdpdi1wdCcpLmlubmVySFRNTCA9IG1qKCcoJyArIHAuY29zX3RleCArICcsXFwsJyArIHAuc2luX3RleCArICcpJyk7IHR5cGVzZXQoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2l2LXB0JykpOwoKICAvLyBTeW1ldHJpZQogIHZhciByZWYgPSBnZXRSZWZBbmdsZShwLmQpOwogIHZhciBzYiA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdzeW1Cb3gnKTsKICBpZiAocmVmICE9PSBwLmQgJiYgcmVmID4gMCkgewogICAgc2Iuc3R5bGUuZGlzcGxheSA9ICdibG9jayc7CiAgICB2YXIgcmVmUHQgPSBwdHMuZmluZChmdW5jdGlvbih4KSB7IHJldHVybiB4LmQgPT09IHJlZjsgfSk7CiAgICBpZiAocmVmUHQpIHsKICAgICAgdmFyIHNjID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3N5bUNvbnRlbnQnKTsKICAgICAgc2MuaW5uZXJIVE1MID0gJ0FuZ2xlIGRlIHJlZi4gZGFucyBRMSA6IDxzdHJvbmc+JyArIHJlZiArICdcdTAwYjA8L3N0cm9uZz48YnI+JyArCiAgICAgICAgJ01lbWVzIHZhbGV1cnMgYWJzb2x1ZXMgcXVlIFAoJyArIG1qKHJlZlB0LnRleF9yKSArICcpJzsKICAgICAgdHlwZXNldChzYyk7CiAgICB9CiAgfSBlbHNlIHsKICAgIHNiLnN0eWxlLmRpc3BsYXkgPSAnbm9uZSc7CiAgfQogIGRyYXcoKTsKfQoKZnVuY3Rpb24gcHRDb29yZHMoZCkgewogIHZhciByID0gZCAqIE1hdGguUEkgLyAxODA7CiAgcmV0dXJuIFtDWCArIE1hdGguY29zKHIpICogUiwgQ1kgLSBNYXRoLnNpbihyKSAqIFJdOwp9CgovLyBRdWFkcmFudCBjb2xvcgpmdW5jdGlvbiBxQ29sb3IoZCkgewogIHZhciBuID0gKChkICUgMzYwKSArIDM2MCkgJSAzNjA7CiAgaWYgKG4gPT09IDAgfHwgbiA9PT0gOTAgfHwgbiA9PT0gMTgwIHx8IG4gPT09IDI3MCkgcmV0dXJuICcjM2I2Y2QxJzsKICBpZiAobiA8IDkwKSByZXR1cm4gJyM2YWFhMWUnOwogIGlmIChuIDwgMTgwKSByZXR1cm4gJyNjNDdhMmYnOwogIGlmIChuIDwgMjcwKSByZXR1cm4gJyNhMDMwMzAnOwogIHJldHVybiAnIzliNTliNic7Cn0KCmZ1bmN0aW9uIGRyYXcoKSB7CiAgY3R4LmNsZWFyUmVjdCgwLCAwLCBXLCBIKTsKICBjdHguZmlsbFN0eWxlID0gJyNmZmYnOyBjdHguZmlsbFJlY3QoMCwgMCwgVywgSCk7CgogIC8vIEZvbmQgcXVhZHJhbnRzICh0cmVzIGxlZ2VyKQogIHZhciBxQ29sb3JzID0gWydyZ2JhKDEwNiwxNzAsMzAsMC4wNCknLCdyZ2JhKDE5NiwxMjIsNDcsMC4wNCknLCdyZ2JhKDE2MCw0OCw0OCwwLjA0KScsJ3JnYmEoMTU1LDg5LDE4MiwwLjA0KSddOwogIHZhciBxQW5nbGVzID0gWzAsIE1hdGguUEkvMiwgTWF0aC5QSSwgMypNYXRoLlBJLzJdOwogIGZvciAodmFyIGkgPSAwOyBpIDwgNDsgaSsrKSB7CiAgICBjdHguYmVnaW5QYXRoKCk7CiAgICBjdHgubW92ZVRvKENYLCBDWSk7CiAgICBjdHguYXJjKENYLCBDWSwgUiwgLXFBbmdsZXNbaV0sIC0ocUFuZ2xlc1tpXSArIE1hdGguUEkvMiksIHRydWUpOwogICAgY3R4LmNsb3NlUGF0aCgpOwogICAgY3R4LmZpbGxTdHlsZSA9IHFDb2xvcnNbaV07CiAgICBjdHguZmlsbCgpOwogIH0KCiAgLy8gTGFiZWxzIHF1YWRyYW50cwogIGN0eC5mb250ID0gJ2JvbGQgMTNweCBzYW5zLXNlcmlmJzsKICBjdHgudGV4dEFsaWduID0gJ2NlbnRlcic7CiAgdmFyIHFsID0gUiAqIDAuNTU7CiAgY3R4LmZpbGxTdHlsZSA9ICdyZ2JhKDEwNiwxNzAsMzAsMC40KSc7IGN0eC5maWxsVGV4dCgnSScsIENYICsgcWwsIENZIC0gcWwpOwogIGN0eC5maWxsU3R5bGUgPSAncmdiYSgxOTYsMTIyLDQ3LDAuNCknOyBjdHguZmlsbFRleHQoJ0lJJywgQ1ggLSBxbCwgQ1kgLSBxbCk7CiAgY3R4LmZpbGxTdHlsZSA9ICdyZ2JhKDE2MCw0OCw0OCwwLjQpJzsgY3R4LmZpbGxUZXh0KCdJSUknLCBDWCAtIHFsLCBDWSArIHFsICsgNSk7CiAgY3R4LmZpbGxTdHlsZSA9ICdyZ2JhKDE1NSw4OSwxODIsMC40KSc7IGN0eC5maWxsVGV4dCgnSVYnLCBDWCArIHFsLCBDWSArIHFsICsgNSk7CgogIC8vIEF4ZXMKICBjdHguc3Ryb2tlU3R5bGUgPSAncmdiYSgwLDAsMCwwLjI4KSc7IGN0eC5saW5lV2lkdGggPSAxLjI7CiAgY3R4LmJlZ2luUGF0aCgpOyBjdHgubW92ZVRvKENYIC0gUiAtIDIwLCBDWSk7IGN0eC5saW5lVG8oQ1ggKyBSICsgMjAsIENZKTsgY3R4LnN0cm9rZSgpOwogIGN0eC5iZWdpblBhdGgoKTsgY3R4Lm1vdmVUbyhDWCwgQ1kgLSBSIC0gMjApOyBjdHgubGluZVRvKENYLCBDWSArIFIgKyAyMCk7IGN0eC5zdHJva2UoKTsKICBjdHguZmlsbFN0eWxlID0gJ3JnYmEoMCwwLDAsMC4zNSknOyBjdHguZm9udCA9ICdpdGFsaWMgMTFweCBzZXJpZic7CiAgY3R4LnRleHRBbGlnbiA9ICdsZWZ0JzsgY3R4LmZpbGxUZXh0KCd4JywgQ1ggKyBSICsgMjIsIENZICsgNCk7CiAgY3R4LnRleHRBbGlnbiA9ICdjZW50ZXInOyBjdHguZmlsbFRleHQoJ3knLCBDWCwgQ1kgLSBSIC0gMjIpOwoKICAvLyBDZXJjbGUKICBjdHguc3Ryb2tlU3R5bGUgPSAnIzNiNmNkMSc7IGN0eC5saW5lV2lkdGggPSAxLjg7CiAgY3R4LmJlZ2luUGF0aCgpOyBjdHguYXJjKENYLCBDWSwgUiwgMCwgMiAqIE1hdGguUEkpOyBjdHguc3Ryb2tlKCk7CgogIC8vIFJheW9uIHZlcnMgcG9pbnQgc2VsZWN0aW9ubmUKICBpZiAoc2VsID49IDApIHsKICAgIHZhciBzcCA9IHB0Q29vcmRzKHB0c1tzZWxdLmQpOwogICAgY3R4LnN0cm9rZVN0eWxlID0gJ3JnYmEoNTksMTA4LDIwOSwwLjM1KSc7IGN0eC5saW5lV2lkdGggPSAxLjU7IGN0eC5zZXRMaW5lRGFzaChbNCwzXSk7CiAgICBjdHguYmVnaW5QYXRoKCk7IGN0eC5tb3ZlVG8oQ1gsIENZKTsgY3R4LmxpbmVUbyhzcFswXSwgc3BbMV0pOyBjdHguc3Ryb2tlKCk7CiAgICAvLyBQcm9qZWN0aW9ucwogICAgY3R4LnN0cm9rZVN0eWxlID0gJ3JnYmEoMTA2LDE3MCwzMCwwLjUpJzsgY3R4LmxpbmVXaWR0aCA9IDE7CiAgICBjdHguYmVnaW5QYXRoKCk7IGN0eC5tb3ZlVG8oc3BbMF0sIHNwWzFdKTsgY3R4LmxpbmVUbyhzcFswXSwgQ1kpOyBjdHguc3Ryb2tlKCk7CiAgICBjdHguYmVnaW5QYXRoKCk7IGN0eC5tb3ZlVG8oQ1gsIENZKTsgY3R4LmxpbmVUbyhzcFswXSwgQ1kpOyBjdHguc3Ryb2tlKCk7CiAgICBjdHguc2V0TGluZURhc2goW10pOwogICAgLy8gQW5nbGUgZGUgcmVmZXJlbmNlIG1pcyBlbiBldmlkZW5jZQogICAgdmFyIHJlZiA9IGdldFJlZkFuZ2xlKHB0c1tzZWxdLmQpOwogICAgaWYgKHJlZiAhPT0gcHRzW3NlbF0uZCAmJiByZWYgPiAwKSB7CiAgICAgIHZhciBycCA9IHB0Q29vcmRzKHJlZik7CiAgICAgIGN0eC5iZWdpblBhdGgoKTsgY3R4LmFyYyhycFswXSwgcnBbMV0sIDksIDAsIDIqTWF0aC5QSSk7CiAgICAgIGN0eC5zdHJva2VTdHlsZSA9ICcjYzQ3YTJmJzsgY3R4LmxpbmVXaWR0aCA9IDI7IGN0eC5zZXRMaW5lRGFzaChbXSk7CiAgICAgIGN0eC5zdHJva2UoKTsKICAgIH0KICB9CgogIC8vIFRvdXMgbGVzIHBvaW50cwogIGZvciAodmFyIGkgPSAwOyBpIDwgcHRzLmxlbmd0aDsgaSsrKSB7CiAgICB2YXIgcGMgPSBwdENvb3JkcyhwdHNbaV0uZCk7CiAgICB2YXIgcHggPSBwY1swXSwgcHkgPSBwY1sxXTsKICAgIHZhciBpc1NlbGVjdGVkID0gKHNlbCA9PT0gaSk7CiAgICB2YXIgY29sID0gaXNTZWxlY3RlZCA/ICcjM2I2Y2QxJyA6IHFDb2xvcihwdHNbaV0uZCk7CiAgICB2YXIgcmFkMiA9IGlzU2VsZWN0ZWQgPyA3IDogNTsKCiAgICBjdHguYmVnaW5QYXRoKCk7IGN0eC5hcmMocHgsIHB5LCByYWQyLCAwLCAyICogTWF0aC5QSSk7CiAgICBjdHguZmlsbFN0eWxlID0gY29sOyBjdHguZmlsbCgpOwogICAgaWYgKGlzU2VsZWN0ZWQpIHsgY3R4LnN0cm9rZVN0eWxlID0gJyNmZmYnOyBjdHgubGluZVdpZHRoID0gMjsgY3R4LnN0cm9rZSgpOyB9CgogICAgLy8gTGFiZWxzIDogYW5nbGUgZW4gZGVncmVzIGV0IGVuIHJhZGlhbnMKICAgIHZhciBkMiA9IHB0c1tpXS5kOwogICAgdmFyIGFuZyA9IGQyICogTWF0aC5QSSAvIDE4MDsKICAgIHZhciBkeCA9IE1hdGguY29zKGFuZyksIGR5ID0gLU1hdGguc2luKGFuZyk7CiAgICB2YXIgbGFiZWxSID0gUiArIDIwOwogICAgdmFyIGx4ID0gQ1ggKyBkeCAqIGxhYmVsUiwgbHkgPSBDWSArIGR5ICogbGFiZWxSOwoKICAgIC8vIEFqdXN0ZW1lbnRzIHBvdXIgZXZpdGVyIGNoZXZhdWNoZW1lbnRzCiAgICB2YXIgb2ZmWCA9IDAsIG9mZlkgPSAwOwogICAgaWYgKE1hdGguYWJzKGR4KSA8IDAuMSkgeyBvZmZYID0gMDsgb2ZmWSA9IGR5ID4gMCA/IDggOiAtMjsgfQogICAgZWxzZSB7IG9mZlggPSBkeCA+IDAgPyAyIDogLTI7IG9mZlkgPSAwOyB9CgogICAgY3R4LmZpbGxTdHlsZSA9IGlzU2VsZWN0ZWQgPyAnIzNiNmNkMScgOiAncmdiYSgwLDAsMCwwLjM1KSc7CiAgICBjdHguZm9udCA9IGlzU2VsZWN0ZWQgPyAnYm9sZCA5cHggc2Fucy1zZXJpZicgOiAnOXB4IHNhbnMtc2VyaWYnOwogICAgY3R4LnRleHRBbGlnbiA9ICdjZW50ZXInOwogICAgY3R4LmZpbGxUZXh0KGQyICsgJ1x1MDBiMCcsIGx4ICsgb2ZmWCwgbHkgKyBvZmZZICsgMyk7CiAgICBjdHguZmlsbFN0eWxlID0gaXNTZWxlY3RlZCA/ICcjM2I2Y2QxJyA6ICdyZ2JhKDEwMCwxMDAsMjAwLDAuNSknOwogICAgY3R4LmZvbnQgPSAnOHB4IHNhbnMtc2VyaWYnOwogICAgY3R4LmZpbGxUZXh0KHB0c1tpXS5yLCBseCArIG9mZlgsIGx5ICsgb2ZmWSArIDEzKTsKICB9Cn0KCi8vIEdlc3Rpb24gZHUgY2xpYwpjdi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uKGUpIHsKICB2YXIgcmVjdCA9IGN2LmdldEJvdW5kaW5nQ2xpZW50UmVjdCgpOwogIHZhciBteCA9IChlLmNsaWVudFggLSByZWN0LmxlZnQpICogKFcgLyByZWN0LndpZHRoKTsKICB2YXIgbXkgPSAoZS5jbGllbnRZIC0gcmVjdC50b3ApICogKEggLyByZWN0LmhlaWdodCk7CiAgdmFyIGJlc3QgPSAtMSwgYmVzdERpc3QgPSAxNTsKICBmb3IgKHZhciBpID0gMDsgaSA8IHB0cy5sZW5ndGg7IGkrKykgewogICAgdmFyIHBjID0gcHRDb29yZHMocHRzW2ldLmQpOwogICAgdmFyIGRpc3QgPSBNYXRoLnNxcnQoKG14IC0gcGNbMF0pICogKG14IC0gcGNbMF0pICsgKG15IC0gcGNbMV0pICogKG15IC0gcGNbMV0pKTsKICAgIGlmIChkaXN0IDwgYmVzdERpc3QpIHsgYmVzdERpc3QgPSBkaXN0OyBiZXN0ID0gaTsgfQogIH0KICBpZiAoYmVzdCA+PSAwKSBzaG93SW5mbyhiZXN0KTsKICBlbHNlIGNsZWFyU2VsKCk7Cn0pOwoKZHJhdygpOwo8L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+Cg==" width="100%" height="520" frameborder="0" scrolling="no" style="border:none;display:block;width:100%;"></iframe>
+    </div>
+
+    <!-- Symetries -->
+    <h2 style="font-family:'Viga',sans-serif;font-size:1.4rem;color:#1a1a2e;margin-bottom:14px;">Utiliser les symétries</h2>
+
+    <p style="font-family:'Noto Sans',sans-serif;font-size:1rem;line-height:1.7;color:#555;margin-bottom:14px;max-width:62ch;">
+        Tout point des quadrants II, III et IV est le symétrique d'un point du quadrant I. Seul <strong>le signe</strong> des coordonnées change selon le quadrant.
+    </p>
+
+    <div style="background:#fff;border:1px solid #e0e0e8;border-radius:10px;padding:16px;margin-bottom:20px;overflow:auto;">
+        <table style="width:100%;border-collapse:collapse;font-family:'Noto Sans',sans-serif;font-size:13px;">
+            <thead>
+                <tr style="background:#eef4fc;">
+                    <th style="padding:8px 10px;text-align:left;border-bottom:2px solid #b3c8f5;">Quadrant</th>
+                    <th style="padding:8px 10px;text-align:center;border-bottom:2px solid #b3c8f5;">cos (x)</th>
+                    <th style="padding:8px 10px;text-align:center;border-bottom:2px solid #b3c8f5;">sin (y)</th>
+                    <th style="padding:8px 10px;text-align:left;border-bottom:2px solid #b3c8f5;">Exemple</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color:#6aaa1e;">
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;font-weight:700;">I (0° à 90°)</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;text-align:center;">+</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;text-align:center;">+</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;">\(P(60°) = (\tfrac{1}{2}, \tfrac{\sqrt{3}}{2})\)</td>
+                </tr>
+                <tr style="color:#c47a2f;">
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;font-weight:700;">II (90° à 180°)</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;text-align:center;">−</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;text-align:center;">+</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;">\(P(120°) = (-\tfrac{1}{2}, \tfrac{\sqrt{3}}{2})\)</td>
+                </tr>
+                <tr style="color:#a03030;">
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;font-weight:700;">III (180° à 270°)</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;text-align:center;">−</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;text-align:center;">−</td>
+                    <td style="padding:8px 10px;border-bottom:1px solid #f0f0f0;">\(P(240°) = (-\tfrac{1}{2}, -\tfrac{\sqrt{3}}{2})\)</td>
+                </tr>
+                <tr style="color:#9b59b6;">
+                    <td style="padding:8px 10px;font-weight:700;">IV (270° à 360°)</td>
+                    <td style="padding:8px 10px;text-align:center;">+</td>
+                    <td style="padding:8px 10px;text-align:center;">−</td>
+                    <td style="padding:8px 10px;">\(P(300°) = (\tfrac{1}{2}, -\tfrac{\sqrt{3}}{2})\)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Vérification Pythagore -->
+    <h2 style="font-family:'Viga',sans-serif;font-size:1.4rem;color:#1a1a2e;margin-bottom:6px;">Vérifier qu'un point est sur le cercle</h2>
+    <p style="font-family:'Noto Sans',sans-serif;font-size:14px;color:#888;margin-bottom:14px;">Clique pour voir l'exemple complet.</p>
+    <div class="mb-4">
+        <div onclick="var i=this.querySelector('.c7c2-pyth');i.style.transform=i.style.transform==='rotateY(180deg)'?'rotateY(0deg)':'rotateY(180deg)'" style="cursor:pointer;perspective:1000px;height:260px;">
+            <div class="c7c2-pyth" style="position:relative;width:100%;height:100%;transition:transform 0.55s;transform-style:preserve-3d;">
+                <div style="position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff;border:1px solid #e0e0e8;border-radius:10px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                    <div style="font-family:'Noto Sans',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#3b6cd1;margin-bottom:14px;">Le point est-il sur le cercle ?</div>
+                    <div style="font-size:18px;color:#1a1a2e;margin-bottom:12px;">\(P\!\left(-\dfrac{1}{10},\, \dfrac{3\sqrt{11}}{10}\right)\)</div>
+                    <div style="font-size:11px;color:#aaa;">Clique pour voir</div>
+                </div>
+                <div style="position:absolute;width:100%;height:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden;transform:rotateY(180deg);background:#eef4fc;border:1px solid #b3c8f5;border-radius:10px;padding:18px;display:flex;flex-direction:column;justify-content:center;gap:10px;">
+                    <div style="font-family:'Noto Sans',sans-serif;font-size:12px;color:#333;line-height:1.8;">
+                        On vérifie si \(x^2 + y^2 = 1\) :<br>
+                        \(\left(-\dfrac{1}{10}\right)^2 + \left(\dfrac{3\sqrt{11}}{10}\right)^2 = \dfrac{1}{100} + \dfrac{9 \times 11}{100} = \dfrac{1 + 99}{100} = \dfrac{100}{100} = 1\)
+                    </div>
+                    <div style="font-size:14px;color:#6aaa1e;font-weight:700;text-align:center;padding:8px;background:#fff;border-radius:6px;">
+                        ✓ Oui, ce point est sur le cercle trigonométrique.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-start" style="background:#e8f0fe;border:1px solid #b3c8f5;border-radius:12px;padding:16px 20px;">
+        <span style="font-family:'Noto Sans',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#3b6cd1;background:#fff;padding:3px 8px;border-radius:6px;flex-shrink:0;margin-top:2px;margin-right:14px;border:1px solid #b3c8f5;">Astuce</span>
+        <p style="font-family:'Noto Sans',sans-serif;font-size:15px;line-height:1.6;color:#444;margin:0;">Tu n'as besoin de mémoriser que les 3 angles du quadrant I (30°, 45°, 60°). Tout le reste s'obtient par symétrie en changeant le <strong>signe</strong> de x (reflet axe des y) ou de y (reflet axe des x), selon le quadrant visé.</p>
+    </div>
+
+    <!-- Pourquoi ? Parce que... -->
+    <h2 style="font-family:'Viga',sans-serif;font-size:1.4rem;color:#1a1a2e;margin-top:32px;margin-bottom:6px;">Pourquoi ? Parce que…</h2>
+    <p style="font-family:'Noto Sans',sans-serif;font-size:14px;color:#888;margin-bottom:14px;">Choisis la meilleure justification. Tu peux réessayer autant de fois que tu veux.</p>
+
+    <div class="pq-card">
+        <div class="pq-head"><div class="pq-badge">1</div><span class="pq-label">Pourquoi ?</span></div>
+        <div class="pq-question">Pourquoi les coordonnées de \(P(\theta)\) sont-elles directement \((\cos\theta,\, \sin\theta)\) ?</div>
+        <button type="button" class="pq-opt" data-fb="Le centre à l'origine est nécessaire, mais c'est la valeur du rayon qui fait disparaître la division.">Parce que le cercle est centré à l'origine du plan.</button>
+        <button type="button" class="pq-opt" data-ok="1" data-fb="Exact : sin θ = opposé ÷ 1 = y et cos θ = adjacent ÷ 1 = x.">Parce que l'hypoténuse du triangle est le rayon, qui vaut 1 : diviser par 1 ne change rien.</button>
+        <button type="button" class="pq-opt" data-fb="L'unité de mesure ne change pas la position du point : P(30°) et P(π/6) sont le même point.">Parce que l'angle \(\theta\) est mesuré en radians.</button>
+        <button type="button" class="pq-opt" data-fb="Cette relation est une conséquence du rayon 1 ; elle n'explique pas pourquoi x est le cosinus et y le sinus.">Parce que \(x^2 + y^2 = 1\).</button>
+        <div class="pq-fb"></div>
+    </div>
+
+    <div class="pq-card">
+        <div class="pq-head"><div class="pq-badge">2</div><span class="pq-label">Pourquoi ?</span></div>
+        <div class="pq-question">Pourquoi \(P(60°)\) a-t-il les mêmes coordonnées que \(P(30°)\), mais inversées ?</div>
+        <button type="button" class="pq-opt" data-fb="Doubler un angle ne double pas et n'inverse pas ses coordonnées. Regarde plutôt la somme des deux angles.">Parce que 60° est le double de 30°.</button>
+        <button type="button" class="pq-opt" data-fb="Un reflet par rapport à l'axe des y change le signe de x : à partir de P(30°), il donne P(150°).">Parce que les deux points sont symétriques par rapport à l'axe des y.</button>
+        <button type="button" class="pq-opt" data-ok="1" data-fb="Exact : dans le même triangle rectangle, les rôles « opposé » et « adjacent » s'échangent, donc x et y aussi.">Parce que 30° et 60° sont complémentaires : le côté opposé à l'un est le côté adjacent à l'autre.</button>
+        <button type="button" class="pq-opt" data-fb="P(45°) est aussi dans le quadrant I, et pourtant ses coordonnées ne sont pas celles de P(30°) inversées.">Parce que les deux points sont dans le quadrant I.</button>
+        <div class="pq-fb"></div>
+    </div>
+
+    <div class="pq-card">
+        <div class="pq-head"><div class="pq-badge">3</div><span class="pq-label">Pourquoi ?</span></div>
+        <div class="pq-question">Pourquoi \(\cos 150°\) est-il négatif alors que \(\sin 150°\) est positif ?</div>
+        <button type="button" class="pq-opt" data-ok="1" data-fb="Exact : P(150°) est le reflet de P(30°) par rapport à l'axe des y ; seul le signe de x change.">Parce que \(P(150°)\) est dans le quadrant II : à gauche de l'axe des y (x négatif) et au-dessus de l'axe des x (y positif).</button>
+        <button type="button" class="pq-opt" data-fb="240° est aussi plus grand que 90°, et pourtant son sinus est négatif. C'est la position du point qui compte.">Parce que 150° est plus grand que 90°.</button>
+        <button type="button" class="pq-opt" data-fb="Ce n'est pas vrai : à 30°, le cosinus (√3/2) est plus grand que le sinus (1/2).">Parce que le cosinus est toujours plus petit que le sinus.</button>
+        <button type="button" class="pq-opt" data-fb="L'angle de référence donne les valeurs absolues (√3/2 et 1/2), pas les signes.">Parce que l'angle de référence de 150° est 30°.</button>
+        <div class="pq-fb"></div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js"></script>
+<script>
+window.addEventListener('load', function () {
+  document.querySelectorAll('.pq-card').forEach(function (card) {
+    var opts = card.querySelectorAll('.pq-opt');
+    var fb = card.querySelector('.pq-fb');
+    opts.forEach(function (opt) {
+      opt.addEventListener('click', function () {
+        var ok = opt.getAttribute('data-ok') === '1';
+        opts.forEach(function (o) { o.classList.remove('pq-good', 'pq-bad'); });
+        opt.classList.add(ok ? 'pq-good' : 'pq-bad');
+        fb.textContent = (ok ? '✓ ' : '✗ ') + opt.getAttribute('data-fb');
+        fb.classList.toggle('pq-fb-bad', !ok);
+        fb.style.display = 'block';
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>
