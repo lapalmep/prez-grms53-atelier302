@@ -133,7 +133,7 @@ body.show-notes #nav{display:none}
 kbd{display:inline-block;font:700 20px/1 "DM Sans";padding:8px 12px;border-radius:8px;background:var(--paper);border:1px solid var(--line);border-bottom-width:3px;margin-right:6px}
 
 /* ── Titre ── */
-.s-title{padding-top:150px}
+.s-title{padding-top:118px;padding-bottom:92px}
 .s-title h1{max-width:1000px}
 .s-title .sub{font:500 40px/1.25 "DM Sans";margin-top:30px;max-width:900px;color:var(--muted)}
 .s-title .who{margin-top:auto;font:700 26px/1.4 "DM Sans"}
@@ -187,6 +187,8 @@ kbd{display:inline-block;font:700 20px/1 "DM Sans";padding:8px 12px;border-radiu
 .lg{height:118px;background:#fff;border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;justify-content:center;padding:6px 8px;box-shadow:0 10px 24px -18px rgba(18,34,44,.4)}
 .lgs.big .lg{height:136px}
 .lg img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.follow{display:flex;align-items:center;gap:28px;margin-top:32px}
+.qr.sm{width:176px;height:176px;padding:12px;border-radius:16px;flex-shrink:0}
 /* ── Chiffres ── */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:10px}
 .stat{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px 26px 30px;box-shadow:0 18px 44px -22px rgba(18,34,44,.28)}
@@ -326,8 +328,11 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
     <div class="kicker a">Atelier 302 · GRMS53 · Demain les maths</div>
     <h1 class="a">Les défis trigono&shy;métriques dans Scratch</h1>
     <p class="sub a">Quand l’IA transforme une bonne idée en ressource complète</p>
-    <div class="who a">Pascal Lapalme <span>· enseignant de mathématiques, Collège Sainte-Anne</span>
-      <div class="hint">→ avancer &nbsp;·&nbsp; S sommaire &nbsp;·&nbsp; N notes &nbsp;·&nbsp; ? aide</div></div>
+    <div class="follow a"><div class="qr sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" shape-rendering="crispEdges"><path fill="#ffffff" d="M0 0h29v29H0z"/><path stroke="#12222c" d="M0 0.5h7m2 0h7m3 0h1m2 0h7M0 1.5h1m5 0h1m4 0h6m3 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h1m3 0h2m1 0h1m3 0h1m2 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h4m2 0h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m1 0h2m5 0h2m2 0h2m1 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m1 0h1m2 0h1m5 0h2m1 0h1m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M8 7.5h2m2 0h1m1 0h1m1 0h1m3 0h1M0 8.5h1m1 0h5m10 0h1m1 0h1m2 0h5M0 9.5h1m1 0h4m1 0h1m3 0h5m2 0h3m1 0h3m3 0h1M1 10.5h1m1 0h1m1 0h2m2 0h1m3 0h3m2 0h1m2 0h1m1 0h2M0 11.5h4m3 0h1m2 0h2m1 0h1m2 0h1m2 0h1m1 0h5m1 0h1M1 12.5h3m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m2 0h1m2 0h1m1 0h2M0 13.5h6m2 0h1m2 0h1m7 0h6m3 0h1M2 14.5h1m3 0h1m4 0h1m3 0h2m3 0h1m1 0h1m2 0h2M0 15.5h3m1 0h1m4 0h1m4 0h3m1 0h4m1 0h1m3 0h1M0 16.5h1m1 0h2m2 0h3m1 0h1m6 0h1m3 0h1m3 0h2M0 17.5h4m4 0h1m1 0h1m1 0h4m2 0h7m1 0h1m1 0h1M0 18.5h1m1 0h2m2 0h2m3 0h1m1 0h3m4 0h1m1 0h2m2 0h1M0 19.5h1m4 0h1m2 0h1m1 0h1m1 0h2m1 0h1m3 0h5m3 0h1M0 20.5h1m1 0h1m1 0h1m1 0h1m7 0h4m1 0h6m1 0h3M8 21.5h1m3 0h1m2 0h1m1 0h2m1 0h1m3 0h5M0 22.5h7m2 0h1m2 0h1m2 0h1m3 0h2m1 0h1m1 0h3M0 23.5h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m3 0h1m3 0h1M0 24.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m2 0h3m2 0h5m1 0h1m1 0h1M0 25.5h1m1 0h3m1 0h1m1 0h2m2 0h3m1 0h4m5 0h2M0 26.5h1m1 0h3m1 0h1m1 0h2m1 0h1m2 0h3m1 0h1m2 0h7M0 27.5h1m5 0h1m4 0h2m2 0h2m3 0h2m1 0h3m1 0h1M0 28.5h7m1 0h2m2 0h4m1 0h1m1 0h1m2 0h2m2 0h1"/></svg>
+</div>
+      <div><div class="viga" style="font-size:30px;line-height:1.15">Suivez la présentation<br>sur votre appareil</div>
+      <div class="url" style="font-size:26px;margin-top:10px">monurl.ca/grms53atelier302</div></div></div>
+    <div class="who a">Pascal Lapalme<br><span>Enseignant de mathématiques, Collège Sainte-Anne · Vice-président du GRMS</span></div>
     <aside class="notes"><b>Avant de commencer :</b> F pour le plein écran, C pour vérifier la zone de la vignette caméra. Le chrono est masqué ; T l’affiche si tu en veux un en répétition. Accueil, une phrase sur toi, puis les titres que l’atelier aurait pu porter.</aside>
   </section>
 
@@ -575,15 +580,6 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
     <div class="kicker a">Les coulisses</div>
     <h2 class="a">Qui a fait quoi ?</h2>
     <div class="cols a">
-      <div class="card or f">
-        <h3><i>Moi</i>Ce que j’ai fait</h3>
-        <ul class="plain o">
-          <li>Partir d’une ressource <b>qui existait déjà</b> : l’idée et les 14 défis</li>
-          <li>Prendre chaque décision pédagogique et visuelle</li>
-          <li>Valider ou rejeter chaque proposition</li>
-          <li>Tester dans un vrai navigateur</li>
-        </ul>
-      </div>
       <div class="card cy f">
         <h3><i>IA</i>L’IA : du temps gagné</h3>
         <ul class="plain">
@@ -593,8 +589,17 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
           <li>Programmer l’interaction</li>
         </ul>
       </div>
+      <div class="card or f">
+        <h3><i>Moi</i>Ce que j’ai fait</h3>
+        <ul class="plain o">
+          <li>Partir d’une ressource <b>qui existait déjà</b> : l’idée et les 14 défis</li>
+          <li>Prendre chaque décision pédagogique et visuelle</li>
+          <li>Valider ou rejeter chaque proposition</li>
+          <li>Tester dans un vrai navigateur</li>
+        </ul>
+      </div>
     </div>
-    <aside class="notes">Commence par toi : la ressource existait, l’idée et les 14 défis étaient déjà là. L’IA t’a surtout fait gagner du temps sur quatre tâches : le HTML, la feuille de style, les questions des quiz et la programmation de l’interaction. Ta formule : « ni naïvement enthousiaste, ni faussement modeste ». L’image qui parle : un développeur très rapide qui ne prend aucune initiative pédagogique de lui-même.</aside>
+    <aside class="notes">L’IA d’abord : elle t’a surtout fait gagner du temps sur quatre tâches, le HTML, la feuille de style, les questions des quiz et la programmation de l’interaction. Puis toi : la ressource existait déjà, l’idée et les 14 défis étaient là, et chaque décision est restée la tienne. Ta formule : « ni naïvement enthousiaste, ni faussement modeste ». L’image qui parle : un développeur très rapide qui ne prend aucune initiative pédagogique de lui-même.</aside>
   </section>
 
   <section class="slide" data-act="1" data-title="Les ratés et la boucle">
@@ -603,7 +608,7 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
     <div class="cols w64 a">
       <ul class="plain o">
         <li class="f">Des bogues de JavaScript.</li>
-        <li class="f">Des échappements de caractères, repris sur plusieurs itérations.</li>
+        <li class="f">Des formules mathématiques qui s’affichaient mal, corrigées en plusieurs essais.</li>
         <li class="f">Des fonctionnalités à refaire.</li>
       </ul>
       <div class="card f">
@@ -745,7 +750,7 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
       <p class="lead a">Le programme que vous avez consulté pour choisir cet atelier a été construit <b>de la même façon.</b></p>
       <div class="scale a"><div class="done">Une ressource</div><div class="done">Un outil</div><div class="done">Un cours</div><div class="now">Un site</div></div>
     </div>
-    <aside class="notes">La révélation : la preuve n’est plus sur ton écran, elle est dans leur poche. Tu parles ici comme vice-président : confirme avant l’atelier que le CA est à l’aise, et nomme les collègues qui ont contribué.</aside>
+    <aside class="notes">La révélation : la preuve n’est plus sur ton écran, elle est dans leur poche. À dire à l’oral : « Comme vice-président, j’ai aussi touché au site du GRMS. » Tu parles ici comme vice-président : confirme avant l’atelier que le CA est à l’aise, et nomme les collègues qui ont contribué.</aside>
   </section>
 
   <section class="slide" data-act="4" data-title="Un Sheet, une page (réplique)">
