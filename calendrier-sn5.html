@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendrier scolaire 2026-2027 — SN5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Viga&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #f4f5f9;
+    color: #1a1a2e;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.4;
+  }
+  .page {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 28px 32px 12px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px -18px rgba(26, 26, 46, .35);
+  }
+  h1 { font-size: 2rem; font-weight: 400; line-height: 1.15; }
+  button:disabled { cursor: default; }
+  #calMonthPanels { overflow-x: auto; }
+  @media (max-width: 700px) {
+    .page { margin: 0; border-radius: 0; padding: 20px 12px 4px; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+<div style="margin-bottom: 18px;">
+<div style="width: 24px; height: 2px; background: #3b6cd1; margin-bottom: 8px;"></div>
+<div style="font-family: 'Noto Sans',sans-serif; font-size: 12px; letter-spacing: 0.06em; color: #3b6cd1; text-transform: uppercase;">SN5-510</div>
+<h1 style="font-family: 'Viga',sans-serif; color: #1a1a2e; margin: 6px 0 4px 0;">Calendrier scolaire 2026-2027</h1>
+</div>
+<div style="display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 20px;">
+<button aria-label="Mois précédent" id="calPrevBtn" style="width: 38px; height: 38px; border-radius: 8px; border: 1.5px solid #ccc; background: #fff; color: #3b6cd1; font-size: 18px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;" type="button">‹</button>
+<select id="calMonthSelect" style="padding: 8px 14px; font-family: 'Viga',sans-serif; font-size: 1.3rem; color: #1a1a2e; border: 1.5px solid #ccc; border-radius: 8px; background: #fff; cursor: pointer; text-align: center;">
+<option value="0">Août 2026</option>
+<option value="1">Septembre 2026</option>
+<option value="2">Octobre 2026</option>
+<option value="3">Novembre 2026</option>
+<option value="4">Décembre 2026</option>
+<option value="5">Janvier 2027</option>
+<option value="6">Février 2027</option>
+<option value="7">Mars 2027</option>
+<option value="8">Avril 2027</option>
+<option value="9">Mai 2027</option>
+<option value="10">Juin 2027</option>
+</select>
+<button aria-label="Mois suivant" id="calNextBtn" style="width: 38px; height: 38px; border-radius: 8px; border: 1.5px solid #ccc; background: #fff; color: #3b6cd1; font-size: 18px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;" type="button">›</button>
+</div>
+<div id="calMonthPanels">
+<div class="calMonthPanel" data-cal-month="8" data-cal-year="2026" data-month-index="0" style="display: block;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead>
+<tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr>
+</thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2026-08-24">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">1</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #c47a2f;">Pédago</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">24</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Jour 0</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">26</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">27</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207730" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 1</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207735" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 2</a></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-08-31">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">2</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">31</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207737" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 3</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207731" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 4</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207739" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 5</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207741" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 6</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="9" data-cal-year="2026" data-month-index="1" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead>
+<tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr>
+</thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2026-08-31">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">2</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">31</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207737" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 3</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207731" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 4</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207739" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 5</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207741" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 6</a></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-09-07">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">3</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">7</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">8</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207744" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 7</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">9</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">10</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207746" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 8</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">11</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207756" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 01 - Cours 9</a></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-09-14">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">4</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #c47a2f;">Pédago</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">14</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">15</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><span style="color:#5e5c64;">Ch. 01 - Cours 10</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">16</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">17</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><span style="color:#5e5c64;">Ch. 01 - Cours 11</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">18</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><span style="color:#5e5c64;">Ch. 01 - Cours 12</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-09-21">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">5</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">21</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><span style="color:#5e5c64;">Ch. 01 - Cours 13</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">22</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; font-weight:700;"><i class="fa-solid fa-clipboard-check" style="margin-right:3px;"></i><span style="color:#5e5c64;">Ch. 01 - Examen C2</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">23</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">24</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207760" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 1</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207770" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 2</a></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-09-28">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">6</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207772" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 3</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; font-weight:700;"><i class="fa-solid fa-clipboard-check" style="margin-right:3px;"></i><span style="color:#5e5c64;">Ch. 01 - Examen C1</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207781" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 4</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207783" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 5</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="10" data-cal-year="2026" data-month-index="2" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead>
+<tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr>
+</thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2026-09-28">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">6</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207772" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 3</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; font-weight:700;"><i class="fa-solid fa-clipboard-check" style="margin-right:3px;"></i><span style="color:#5e5c64;">Ch. 01 - Examen C1</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207781" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 4</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207783" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 5</a></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-10-05">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">7</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">5</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207785" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 6</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">6</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207788" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 7</a></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">7</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">8</span>
+</div>
+
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">9</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207791" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 8</a></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-10-12">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">8</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">12</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">13</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207798" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 9</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">14</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">15</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207851" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 10</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">16</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207851" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 02 - Cours 11</a></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-10-19">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">9</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">19</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><span style="color:#5e5c64;">Ch. 02 - Cours 12</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">20</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; font-weight:700;"><i class="fa-solid fa-clipboard-check" style="margin-right:3px;"></i><span style="color:#5e5c64;">Ch. 02 - Examen C2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">21</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">22</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207854" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 03 - Cours 1</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">23</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207860" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 03 - Cours 2</a></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-10-26">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">10</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">26</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207897" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 03 - Cours 3</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">27</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207901" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 03 - Cours 4</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">D1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207902" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 03 - Cours 5</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">E1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207903" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 03 - Cours 6</a></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="11" data-cal-year="2026" data-month-index="3" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead>
+<tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr>
+</thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2026-11-02">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">11</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">5</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">6</span>
+</div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-11-09">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">12</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">9</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207946" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 04 - Cours 1</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">10</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207948" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 04 - Cours 2</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #1a5fb4;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">11</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">12</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207949" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 04 - Cours 3</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">13</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207950" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 04 - Cours 4</a></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-11-16">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">13</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">16</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207962" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 04 - Cours 5</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">17</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; "><a href="https://moodle.sainteanne.ca/mod/page/view.php?id=207963" rel="noopener" style="color:#5e5c64; text-decoration: underline;" target="_blank">Ch. 04 - Cours 6</a></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">18</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">19</span>
+</div>
+
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">20</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div><div style="font-size:9px; "><span style="color:#5e5c64;">Ch. 03-04 - Exercices</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-11-23">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">14</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">23</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div><div style="font-size:9px; "><span style="color:#5e5c64;">Ch. 03-04 - Exercices</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">24</span>
+</div>
+
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div><div style="font-size:9px; font-weight:700;"><i class="fa-solid fa-clipboard-check" style="margin-right:3px;"></i><span style="color:#5e5c64;">Ch. 03-04 - Examen C2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">26</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #c47a2f;">Pédago</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">27</span>
+</div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-11-30">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">15</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="12" data-cal-year="2026" data-month-index="4" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead>
+<tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr>
+</thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2026-11-30">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">15</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-12-07">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">16</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">7</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">8</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">9</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">10</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">11</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-12-14">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">17</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">14</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">15</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">16</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">17</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">18</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-12-21">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">18</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">21</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">22</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">23</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">24</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span>
+</div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2026-12-28">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">19</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">31</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="1" data-cal-year="2027" data-month-index="5" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead>
+<tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr>
+</thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2026-12-28">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">19</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">31</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-01-04">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">20</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #c47a2f;">Pédago</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">5</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">6</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">7</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">8</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-01-11">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">21</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">11</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">12</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">13</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">14</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">15</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-01-18">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">22</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">18</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">19</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">20</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">21</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">22</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-01-25">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">23</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">26</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">27</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="2" data-cal-year="2027" data-month-index="6" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead>
+<tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr>
+</thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2027-02-01">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">24</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">5</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-02-08">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">25</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">8</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">A1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">9</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">C1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">10</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">E1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">11</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">D1</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">12</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-02-15">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">26</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #26a269;">B2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">15</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">16</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">17</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">18</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D2</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">19</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-02-22">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">27</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">22</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">23</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">24</span>
+</div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div>
+</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;">
+<div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;">
+<span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D3</span>
+<span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">26</span>
+</div>
+<div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="3" data-cal-year="2027" data-month-index="7" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead><tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr></thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2027-03-01">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">28</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">5</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-03-08">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">29</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">8</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">9</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">10</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">11</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">12</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-03-15">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">30</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">15</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">16</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">17</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">18</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #c47a2f;">Pédago</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">19</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-03-22">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">31</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">22</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">23</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">24</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">26</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-03-29">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">32</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">31</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="4" data-cal-year="2027" data-month-index="8" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead><tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr></thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2027-03-29">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">32</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">31</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-04-05">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">33</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">5</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">6</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">7</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">8</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">9</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-04-12">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">34</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">12</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">13</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">14</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">15</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">16</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-04-19">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">35</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">19</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">20</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">21</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">22</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">23</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-04-26">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">36</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">26</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">27</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="5" data-cal-year="2027" data-month-index="9" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead><tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr></thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2027-05-03">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">37</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">5</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">6</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">7</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-05-10">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">38</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">10</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">11</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">12</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">13</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #c47a2f;">Pédago</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">14</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-05-17">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">39</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">17</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">18</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">19</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">20</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">21</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-05-24">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">40</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">24</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">26</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">27</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-05-31">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">41</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">31</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calMonthPanel" data-cal-month="6" data-cal-year="2027" data-month-index="10" style="display: none;">
+<table style="width: 100%; border-collapse: collapse; font-family: 'Noto Sans',sans-serif; font-size: 13px; margin-bottom: 24px;">
+<thead><tr>
+<th style="background: #f0f0f5; color: #888; padding: 6px; border: 1px solid #e0e0e8; font-size: 11px; width: 10%;">Sem.</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Lun</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mar</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Mer</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Jeu</th>
+<th style="background: #3b6cd1; color: #fff; padding: 8px 6px; border: 1px solid #2d5cb0; font-family: 'Viga',sans-serif; font-size: 12px; width: 18%;">Ven</th>
+</tr></thead>
+<tbody>
+<tr class="calWeekRow" data-week-start="2027-05-31">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">41</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">31</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">3</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D3</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">4</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-06-07">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">42</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">7</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">A1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">8</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P4</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">9</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">E1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">10</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P2</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D1</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">11</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P3</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-06-14">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">43</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">B2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">14</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">D2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">15</span></div><div style="font-size: 10px; color: #5e5c64; font-weight: 700;">SN5-510 <span style="font-weight:400;">P6</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #613583;">C2</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">16</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">17</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">18</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-06-21">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">44</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">21</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #c47a2f;">Pédago</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">22</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #c47a2f;">Pédago</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">23</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #999;">Congé</span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">24</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">25</span></div></td>
+</tr>
+<tr class="calWeekRow" data-week-start="2027-06-28">
+<td style="background: #f7f7fa; border: 1px solid #e0e0e8; padding: 4px; text-align: center; font-size: 11px; color: #000;">45</td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">28</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">29</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fff; padding: 6px; vertical-align: top; min-width: 90px; opacity: 1;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">30</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">1</span></div></td>
+<td class="calWeekCell" style="border: 1px solid #e0e0e8; background: #fbfbfd; padding: 6px; vertical-align: top; min-width: 90px; opacity: 0.55;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 3px; margin-bottom: 4px; border-bottom: 1px solid #eee;"><span style="font-family: 'Viga',sans-serif; font-size: 12.5px; color: #ccc;"> </span><span style="font-family: 'Noto Sans',sans-serif; font-size: 11px; color: #000;">2</span></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<script>
+(function () {
+  var select = document.getElementById('calMonthSelect');
+  var prevBtn = document.getElementById('calPrevBtn');
+  var nextBtn = document.getElementById('calNextBtn');
+  var panels = document.querySelectorAll('.calMonthPanel');
+  var totalMonths = panels.length;
+
+  function activateMonth(idx) {
+    idx = String(idx);
+    select.value = idx;
+    panels.forEach(function (p) {
+      p.style.display = (p.getAttribute('data-month-index') === idx) ? 'block' : 'none';
+    });
+    prevBtn.disabled = (idx === '0');
+    nextBtn.disabled = (idx === String(totalMonths - 1));
+    prevBtn.style.opacity = prevBtn.disabled ? '0.35' : '1';
+    nextBtn.style.opacity = nextBtn.disabled ? '0.35' : '1';
+    prevBtn.style.cursor = prevBtn.disabled ? 'default' : 'pointer';
+    nextBtn.style.cursor = nextBtn.disabled ? 'default' : 'pointer';
+  }
+
+  select.addEventListener('change', function () {
+    activateMonth(select.value);
+  });
+
+  prevBtn.addEventListener('click', function () {
+    var idx = parseInt(select.value, 10);
+    if (idx > 0) activateMonth(idx - 1);
+  });
+
+  nextBtn.addEventListener('click', function () {
+    var idx = parseInt(select.value, 10);
+    if (totalMonths - 1 > idx) activateMonth(idx + 1);
+  });
+
+  var today = new Date();
+  var todayY = today.getFullYear();
+  var todayM = today.getMonth() + 1;
+
+  var matchIdx = null;
+  var firstIdx = null;
+  var lastIdx = null;
+  panels.forEach(function (p) {
+    var py = parseInt(p.getAttribute('data-cal-year'), 10);
+    var pm = parseInt(p.getAttribute('data-cal-month'), 10);
+    var idx = p.getAttribute('data-month-index');
+    if (firstIdx === null) firstIdx = idx;
+    lastIdx = idx;
+    if (py === todayY && pm === todayM) matchIdx = idx;
+  });
+
+  if (matchIdx !== null) {
+    activateMonth(matchIdx);
+  } else {
+    var todayVal = todayY * 100 + todayM;
+    var lastPanel = panels[panels.length - 1];
+    var lastVal = parseInt(lastPanel.getAttribute('data-cal-year'), 10) * 100 + parseInt(lastPanel.getAttribute('data-cal-month'), 10);
+    if (todayVal > lastVal) {
+      activateMonth(lastIdx);
+    } else {
+      activateMonth(firstIdx);
+    }
+  }
+
+  var todayIso = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
+  var todayDate = new Date(todayIso);
+
+  document.querySelectorAll('.calWeekRow').forEach(function (row) {
+    var startIso = row.getAttribute('data-week-start');
+    var startDate = new Date(startIso);
+    var endDate = new Date(startDate);
+    endDate.setDate(endDate.getDate() + 4);
+    if (todayDate >= startDate && endDate >= todayDate) {
+      row.querySelectorAll('.calWeekCell').forEach(function (cell) {
+        cell.style.background = '#BCBCD5';
+        cell.style.opacity = '1';
+      });
+    }
+  });
+})();
+</script>
+
+</main>
+</body>
+</html>
