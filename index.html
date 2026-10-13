@@ -189,6 +189,12 @@ kbd{display:inline-block;font:700 20px/1 "DM Sans";padding:8px 12px;border-radiu
 .lg img{max-width:100%;max-height:100%;object-fit:contain;display:block}
 .follow{display:flex;align-items:center;gap:28px;margin-top:32px}
 .qr.sm{width:176px;height:176px;padding:12px;border-radius:16px;flex-shrink:0}
+.envol{display:flex;align-items:center;gap:18px;margin-top:24px;max-width:1060px;font:500 24px/1.35 "DM Sans";background:var(--paper);border:1px solid var(--line);border-left:8px solid var(--orange);border-radius:14px;padding:16px 22px}
+.envol .tag{flex-shrink:0}
+.envl{font-weight:700;color:var(--cyan-d);white-space:nowrap;text-decoration:none;margin-left:6px}
+.envl:hover{text-decoration:underline}
+.rad{white-space:nowrap;display:inline-flex;align-items:flex-start;line-height:1.25}
+.rad .rc{border-top:2px solid currentColor;padding:1px 3px 0 2px;margin-left:-1px;line-height:1.2}
 /* ── Chiffres ── */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:10px}
 .stat{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px 26px 30px;box-shadow:0 18px 44px -22px rgba(18,34,44,.28)}
@@ -616,8 +622,9 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
         <p class="small" style="margin:18px 0 6px">Avec l’IA</p><p style="font-weight:700" class="hl">Quelques séances de travail intense</p>
       </div>
     </div>
-    <div class="loop f" style="margin-top:44px"><span>Demander</span><em>→</em><span>Tester</span><em>→</em><span>Corriger</span><em>↺</em></div>
-    <aside class="notes">Travailler avec l’IA demande de la patience, de la précision dans les demandes et la capacité de tester ce qu’on reçoit. Sans IA : apprendre JavaScript, déboguer le localStorage, implanter MathJax. La ressource serait restée telle quelle, à la merci de son hébergement. Fin de l’acte 1 : vise 26 minutes.</aside>
+    <div class="loop f" style="margin-top:30px"><span>Demander</span><em>→</em><span>Tester</span><em>→</em><span>Corriger</span><em>↺</em></div>
+    <div class="envol f"><span class="tag o">À lire</span><span>Mon article dans le nouveau numéro de la revue <b>Envol</b> : <i>De la ressource web au mini-site pédagogique autonome : les défis trigonométriques dans Scratch</i> <a class="envl" href="https://revueenvol.ca/" target="_blank" rel="noopener">revueenvol.ca ↗</a></span></div>
+    <aside class="notes">Travailler avec l’IA demande de la patience, de la précision dans les demandes et la capacité de tester ce qu’on reçoit. Sans IA : apprendre JavaScript, déboguer le localStorage, implanter MathJax. La ressource serait restée telle quelle, à la merci de son hébergement. Fin de l’acte 1 : vise 26 minutes. Mentionne ton article sur les défis dans le nouveau numéro de la revue Envol, en ligne pour le GRMS53.</aside>
   </section>
 
   <!-- ═════════ ACTE 2 ═════════ -->
@@ -653,11 +660,11 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
         <table class="t" id="pnSrc"><thead><tr><th>Fiche</th><th>Élève</th><th>Note</th></tr></thead><tbody></tbody></table></div></div>
       <div class="mid"><div class="ar">→</div><button class="btn or" id="pnGo" style="margin-top:8px">Lancer</button></div>
       <div class="win"><div class="bar"><i></i><i></i><i></i>Portail de l’école</div><div class="body">
-        <table class="t" id="pnDst"><thead><tr><th>Fiche</th><th>Élève</th><th>Note</th></tr></thead><tbody></tbody></table></div></div>
+        <table class="t" id="pnDst"><thead><tr><th>Fiche</th><th>Élève</th><th>Cote</th></tr></thead><tbody></tbody></table></div></div>
     </div>
     <div id="pnStatus" class="a" style="margin-top:18px"></div>
     <div class="row a" style="margin-top:6px;max-width:1120px">
-      <span class="tag o">Python</span><span class="tag o">Navigation web automatisée</span><span class="tag o">Repère : le numéro de fiche</span><span class="tag o">Identifiants gardés en local</span>
+      <span class="tag o">Python</span><span class="tag o">Navigation automatisée</span><span class="tag o">Repère : n° de fiche</span><span class="tag o">Identifiants en local</span>
     </div>
     <aside class="notes">Clique <b>Lancer</b>. Fais remarquer que l’ordre des élèves n’est pas le même des deux côtés : l’outil se repère avec le numéro de fiche, pas avec la position. « La machine ne connaît ni l’inattention ni le glissement de souris. » L’interface pour les collègues : menus déroulants (CST ou SN) et un gros bouton. Si tu as la capture vidéo de la vraie application, c’est ici.</aside>
   </section>
@@ -680,7 +687,8 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
       <div><h3>Le mur</h3><p style="font-size:28px">L’interface figeait pendant que l’ordinateur travaillait. Je décris le comportement fautif, l’IA propose la correction.</p></div>
       <div><h3>Le résultat</h3><p style="font-size:28px">Des dizaines de minutes de saisie deviennent <b class="ho">quelques secondes.</b></p></div>
     </div>
-    <aside class="notes">Le gain le plus précieux est psychologique : la charge mentale qui baisse. Phrase clé : la création d’outils n’est plus réservée aux programmeurs, elle devient accessible à tout expert de son métier capable de dialoguer avec une machine. Vise 34 minutes.</aside>
+    <div class="envol f"><span class="tag o">À lire</span><span>Mon article dans le nouveau numéro de la revue <b>Envol</b> : <i>PluriNinja : comment j’ai fait de l’IA mon assistant personnel (et vaincu la saisie manuelle)</i> <a class="envl" href="https://revueenvol.ca/" target="_blank" rel="noopener">revueenvol.ca ↗</a></span></div>
+    <aside class="notes">Le gain le plus précieux est psychologique : la charge mentale qui baisse. Phrase clé : la création d’outils n’est plus réservée aux programmeurs, elle devient accessible à tout expert de son métier capable de dialoguer avec une machine. Vise 34 minutes. Termine en mentionnant ton article dans le nouveau numéro de la revue Envol, en ligne pour le GRMS53 : ceux que PluriNinja intéresse y trouveront toute l’histoire.</aside>
   </section>
 
   <!-- ═════════ ACTE 3 ═════════ -->
@@ -726,19 +734,23 @@ table.recap td.p{color:var(--cyan-d);font-weight:700}
     <aside class="notes">Environ 4 minutes pour les deux. Cercle : clique 150°, montre l’angle de référence de 30° et les signes. Inéquation : change le symbole d’inégalité, puis descends la droite g jusqu’à ce qu’il n’y ait plus d’intersection. Fais le lien avec l’acte 1 : la trigonométrie, encore.</aside>
   </section>
 
-  <section class="slide" data-act="3" data-title="Le raté préféré : \frac">
-    <div class="kicker a">Mon raté préféré</div>
-    <h2 class="a">Quand les fractions disparaissent.</h2>
-    <div class="glitch a">
-      <span class="mono">\frac{1}{2}</span><span class="to">→</span><span class="mono bad f">▯rac{1}{2}</span>
+  <section class="slide" data-act="3" data-title="La part cachée du travail">
+    <div class="kicker a">La part cachée du travail</div>
+    <h2 class="a" style="font-size:58px">80 % du résultat en 20 % du temps… <span class="ho">et le reste ?</span></h2>
+    <div class="cols w64 a" style="align-items:start">
+      <ul class="plain o">
+        <li class="f"><b>Zone graphique tronquée</b> : des courbes coupées au bord du cadre.</li>
+        <li class="f"><b>Équations mal affichées</b> : des formules brisées ou illisibles.</li>
+        <li class="f"><b>Disposition bancale</b> : des éléments qui se chevauchent ou débordent.</li>
+        <li class="f"><b>Animations embryonnaires</b> : ça bougeait, mais rien n’allait jusqu’au bout.</li>
+      </ul>
+      <div class="card f">
+        <p style="font-size:30px">Le premier jet fonctionnait. Il n’était pas <i>bon</i>.</p>
+        <p class="small" style="margin-top:14px">Chaque animation a demandé plusieurs allers-retours.</p>
+      </div>
     </div>
-    <ul class="plain o">
-      <li class="f">En chemin, la barre oblique inverse se faisait avaler : la formule devenait illisible.</li>
-      <li class="f">Un bogue revenu plusieurs fois avant d’être réglé pour de bon.</li>
-      <li class="f"><b>Personne ne l’aurait vu sans ouvrir la page et la lire.</b></li>
-    </ul>
-    <p class="lead f" style="margin-top:34px"><mark>L’IA produit. Le pilote vérifie.</mark></p>
-    <aside class="notes">Pour des profs de maths, c’est parlant : une fraction qui ne s’affiche plus. Même problème avec \right. Anecdote facultative, toute fraîche : en préparant cet atelier, une esquisse affichait un intervalle qui contredisait la réponse écrite juste en dessous. Trouvé à la relecture, corrigé en deux minutes. Vise 42 minutes.</aside>
+    <p class="lead f" style="margin-top:30px"><mark>L’IA produit. Le pilote vérifie.</mark></p>
+    <aside class="notes">La part cachée du chantier Moodle : les animations. Elles avaient l’air finies, mais en les ouvrant pour vrai, la zone graphique était tronquée, les équations mal affichées, la disposition bancale, et les animations semblaient embryonnaires. Exemple concret pour les équations : \frac{1}{2} perdait sa barre oblique et la fraction ne s’affichait plus. Message : l’IA livre vite un premier jet qui fonctionne ; le rendre <b>bon</b> pour des élèves, c’est le travail du pilote. Vise 42 minutes.</aside>
   </section>
 
   <!-- ═════════ ACTE 4 ═════════ -->
@@ -1021,8 +1033,8 @@ function triPts(ang){
 function triReset(){cancelAnimationFrame(triRAF);$("#triLine").setAttribute("points","");$("#triGap").setAttribute("points","");
   $("#triPen").setAttribute("cx",TA[0]);$("#triPen").setAttribute("cy",TA[1]);$("#verdict").textContent="";$("#verdict").className="";
   $("#triFormula").textContent="";$("#angVal").textContent="m∠A"}
-function triRun(ang,label,ok){
-  triReset();$("#angVal").textContent=String(ang).replace(".",",");$("#triFormula").textContent=label;
+function triRun(ang,label,ok,shown){
+  triReset();$("#angVal").textContent=shown;$("#triFormula").textContent=label;
   var P=triPts(ang), L=[], tot=0;
   for(var i=1;i<P.length;i++){var d=Math.hypot(P[i][0]-P[i-1][0],P[i][1]-P[i-1][1]);L.push(d);tot+=d}
   var start=null, DUR=2600;
@@ -1043,17 +1055,17 @@ function triRun(ang,label,ok){
   }
   triRAF=requestAnimationFrame(frame);
 }
-$("#triOk").addEventListener("click",function(){triRun(36.87,"m∠A = tan⁻¹(150 ÷ 200) ≈ 36,87°",true)});
-$("#triKo").addEventListener("click",function(){triRun(48.59,"m∠A = sin⁻¹(150 ÷ 200) ≈ 48,59°",false)});
+$("#triOk").addEventListener("click",function(){triRun(Math.atan(150/200)*180/Math.PI,"m∠A = tan⁻¹(150 ÷ 200) = 36,8698…°",true,"36,8698…")});
+$("#triKo").addEventListener("click",function(){triRun(Math.asin(150/200)*180/Math.PI,"m∠A = sin⁻¹(150 ÷ 200) = 48,5903…°",false,"48,5903…")});
 
 /* ── Quiz et progression ── */
 var QUIZ=[
  {q:"Dans un triangle rectangle, quel rapport relie le côté opposé et le côté adjacent à un angle ?",
   o:["La tangente","Le sinus","Le cosinus"],e:"tan A = opposé ÷ adjacent. Le sinus et le cosinus font intervenir l’hypoténuse."},
  {q:"Le côté opposé à l’angle A mesure 150 et le côté adjacent, 200. Que vaut m∠A ?",
-  o:["tan⁻¹(150 ÷ 200) ≈ 36,87°","sin⁻¹(150 ÷ 200) ≈ 48,59°","tan⁻¹(200 ÷ 150) ≈ 53,13°"],e:"On connaît l’opposé et l’adjacent : c’est la tangente, opposé sur adjacent."},
+  o:["tan⁻¹(150 ÷ 200) = 36,8698…°","sin⁻¹(150 ÷ 200) = 48,5903…°","tan⁻¹(200 ÷ 150) = 53,1301…°"],e:"On connaît l’opposé et l’adjacent : c’est la tangente, opposé sur adjacent."},
  {q:"Avec ces mêmes cathètes (150 et 200), que mesure l’hypoténuse ?",
-  o:["250","350","175"],e:"√(150² + 200²) = √62 500 = 250."}];
+  o:["250","350","175"],e:'<span class="rad">√<span class="rc">150² + 200²</span></span> = <span class="rad">√<span class="rc">62 500</span></span> = 250.'}];
 var scores=[3,null,null,null,null,null,null,null,null,null,null,null,null,null];
 var order=[], qi=0, good=0;
 function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
@@ -1119,7 +1131,9 @@ $("#pName").addEventListener("input",function(){sayHello(this.value.trim())});
 renderProg();
 
 /* ── PluriNinja (données fictives) ── */
-var PN=[[20417,"Élève A",82],[20388,"Élève B",74],[20502,"Élève C",91],[20455,"Élève D",68],[20391,"Élève E",88]];
+var COTES=[[97.5,"A+"],[92.5,"A"],[87.5,"A−"],[82.5,"B+"],[77.5,"B"],[72.5,"B−"],[67.5,"C+"],[62.5,"C"],[57.5,"C−"]];
+function cote(n){for(var k=0;k<COTES.length;k++){if(n>=COTES[k][0])return COTES[k][1]}return "—"}
+var PN=[[20417,"Élève A",82],[20388,"Élève B",74],[20502,"Élève C",91],[20455,"Élève D",68],[20391,"Élève E",95]];
 var PNO=[3,0,4,1,2], pnBusy=false;
 function pnBuild(){
   $("#pnSrc tbody").innerHTML=PN.map(function(r){return '<tr data-f="'+r[0]+'"><td>'+r[0]+"</td><td>"+r[1]+'</td><td class="note">'+r[2]+"</td></tr>"}).join("");
@@ -1130,10 +1144,10 @@ $("#pnGo").addEventListener("click",function(){
   if(pnBusy)return;pnBusy=true;pnBuild();var i=0,t=Date.now();
   (function step(){
     $$("#pnSrc tr.hit,#pnDst tr.hit").forEach(function(x){x.classList.remove("hit")});
-    if(i>=PN.length){pnBusy=false;$("#pnStatus").textContent=PN.length+" notes saisies en "+((Date.now()-t)/1000).toFixed(1).replace(".",",")+" s, sans faute de frappe.";return}
+    if(i>=PN.length){pnBusy=false;$("#pnStatus").textContent=PN.length+" notes converties en cotes et saisies en "+((Date.now()-t)/1000).toFixed(1).replace(".",",")+" s, sans faute de frappe.";return}
     var r=PN[i], a=$('#pnSrc tr[data-f="'+r[0]+'"]'), b=$('#pnDst tr[data-f="'+r[0]+'"]');
-    a.classList.add("hit");b.classList.add("hit");var c=$(".note",b);c.textContent=r[2];c.classList.add("in");
-    $("#pnStatus").textContent="Fiche "+r[0]+" → "+r[2];i++;setTimeout(step,520);
+    a.classList.add("hit");b.classList.add("hit");var c=$(".note",b);c.textContent=cote(r[2]);c.classList.add("in");
+    $("#pnStatus").textContent="Fiche "+r[0]+" : "+r[2]+" % → "+cote(r[2]);i++;setTimeout(step,520);
   })();
 });
 pnBuild();
