@@ -468,7 +468,15 @@ i { font-style: italic; font-weight: 600; }
     let v = `<path class="draw" pathLength="1" stroke="${BLUE}" stroke-width="5" stroke-linejoin="round" d="M ${X(-2)} ${Y(-5.5)} L ${X(7)} ${Y(17)} L ${X(16)} ${Y(-5.5)}"/>`;
     v += `<circle class="late" cx="${X(7)}" cy="${Y(17)}" r="7" fill="${BLUE}"/>`;
     v += t(X(7), Y(17) - 18, '(7, 17)', { c: BLUE, size: 22, cls: 'late' });
-    v += `<foreignObject class="late" x="${X(9)}" y="${Y(14) - 40}" width="420" height="64"><div xmlns="http://www.w3.org/1999/xhtml" style="font: 700 26px 'Noto Sans', sans-serif; color: ${BLUE}; white-space: nowrap; line-height: 64px;">y = −<span class="frac"><span>1</span><span>2</span></span>|35 − 5<i style="font-weight:700">x</i>| + 17</div></foreignObject>`;
+    // Étiquette avec fraction empilée, en SVG pur (compatible Safari iPad)
+    const lx = X(9) + 66, ly = Y(14);
+    v += `<g class="late">`;
+    v += t(lx, ly, 'y = −', { c: BLUE, size: 26, w: 700, a: 'end' });
+    v += t(lx + 14, ly - 13, '1', { c: BLUE, size: 21, w: 700 });
+    v += `<line x1="${lx + 4}" y1="${ly - 8}" x2="${lx + 24}" y2="${ly - 8}" stroke="${BLUE}" stroke-width="2.5"/>`;
+    v += t(lx + 14, ly + 13, '2', { c: BLUE, size: 21, w: 700 });
+    v += t(lx + 30, ly, '<tspan>|35 − 5</tspan><tspan font-style="italic">x</tspan><tspan>| + 17</tspan>', { c: BLUE, size: 26, w: 700, a: 'start' });
+    v += `</g>`;
 
     let h = `<path class="draw" pathLength="1" stroke="${ORANGE}" stroke-width="5" d="M ${X(-2)} ${Y(7)} L ${X(16)} ${Y(7)}"/>`;
     h += t(X(16), Y(7) - 14, 'y = 7', { c: ORANGE_INK, size: 26, w: 700, a: 'end', cls: 'late' });
